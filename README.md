@@ -27,15 +27,12 @@ npm run start:dev
 ```
 
 Obs.: caso for iniciar o projeto em produção, é necessário modificar o arquivo `src/app.module.ts`
-de
 
 ```bash
+## de:
 synchronize: true
-```
 
-para
-
-```bash
+##para
 synchronize: false
 ```
 
