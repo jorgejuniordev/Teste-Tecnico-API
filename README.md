@@ -26,10 +26,18 @@ npm install
 npm run start:dev
 ```
 
-Obs.: caso for iniciar o projeto em produção, é necessário inserir o valor false em:
+Obs.: caso for iniciar o projeto em produção, é necessário modificar o arquivo `src/app.module.ts`
+de
 
-- src/app.module.ts
-  synchronize: false
+```bash
+synchronize: true
+```
+
+para
+
+```bash
+synchronize: false
+```
 
 2. Execute o seeder para criar o usuário administrador padrão e categorias:
 
