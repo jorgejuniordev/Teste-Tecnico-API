@@ -35,7 +35,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsI
 ### Busca uma categoria pelo id
 POST http://localhost:3000/financial-categories/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiaWF0IjoxNzQ3MTUxMDUzLCJleHAiOjE3NDcxNTQ2NTN9.sd-02v8jlHywEhWPgy5IdFtCmv4WDnSeQEQBSvo1MjU
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiaWF0IjoxNzQ3NDEyMzgzLCJleHAiOjE3NDc0MTU5ODN9._BzWgVBvPrVySOlea1mdO0w7Qx0tCEuyTo3FBsgrPfQ
 
 {
   "name": "Teste de categoria",
@@ -45,12 +45,12 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsI
 ### 
 GET http://localhost:3000/financial-categories/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiaWF0IjoxNzQ3MTUxMDUzLCJleHAiOjE3NDcxNTQ2NTN9.sd-02v8jlHywEhWPgy5IdFtCmv4WDnSeQEQBSvo1MjU
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiaWF0IjoxNzQ3NDE1MDc2LCJleHAiOjE3NDc0MTg2NzZ9.ZR40cOVbJQnxy74UL7yxf_K7HBOgM3uSoAzFBozMss0
 
 ### 
 GET http://localhost:3000/financial-entries
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiaWF0IjoxNzQ3MzY2MDEwLCJleHAiOjE3NDczNjk2MTB9.KZszf9ViddPxCPqGeTABhyGIBUpDJQmXxnbK2IcXmFg
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiaWF0IjoxNzQ3NDE1MDc2LCJleHAiOjE3NDc0MTg2NzZ9.ZR40cOVbJQnxy74UL7yxf_K7HBOgM3uSoAzFBozMss0
 
 ### Cria uma entrada
 POST http://localhost:3000/financial-entries
@@ -69,6 +69,11 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsI
 GET http://localhost:3000/users/7
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjcsImVtYWlsIjoidGVzdGVAZ21haWwuY29tIiwiaWF0IjoxNzQ2ODEwODEyLCJleHAiOjE3NDY4MTQ0MTJ9.oRSWCzFV9YDapkNtbTAlJDAmBv-ELXqUOjTFp3m0jMQ
+
+### Busca todos os usuários
+GET http://localhost:3000/users/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiaWF0IjoxNzQ3NDE1MDc2LCJleHAiOjE3NDc0MTg2NzZ9.ZR40cOVbJQnxy74UL7yxf_K7HBOgM3uSoAzFBozMss0
 
 ### Cria um usuário
 POST http://localhost:3000/users
