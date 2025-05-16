@@ -20,7 +20,7 @@ npm install
 
 ## Iniciando o Projeto Localmente
 
-1. Inicie o servidor:
+1. Inicie o servidor (dev):
 
 ```bash
 npm run start:dev
