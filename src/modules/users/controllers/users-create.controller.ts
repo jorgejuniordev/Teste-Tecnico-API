@@ -1,16 +1,8 @@
-import {
-  Controller,
-  Post,
-  Body,
-  BadRequestException,
-  UseGuards,
-} from '@nestjs/common';
+import { Controller, Post, Body, BadRequestException } from '@nestjs/common';
 import { UsersService } from '../users.service';
 import { CreateUserDto } from '../dto/create-user.dto';
-import { JwtAuthGuard } from 'src/modules/auth/guards/auth.guard';
 
 @Controller('users')
-@UseGuards(JwtAuthGuard)
 export class UsersCreateController {
   constructor(private readonly service: UsersService) {}
 
