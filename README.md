@@ -36,10 +36,11 @@ synchronize: true
 synchronize: false
 ```
 
-2. Execute o seeder para criar o usuário administrador padrão e categorias:
+2. Execute o seeder para criar o usuário administrador padrão e categoria:
 
 ```bash
 npm run seed
+## email: admin@admin.com - senha: 123456
 ```
 
 ## Endpoints
