@@ -1,0 +1,95 @@
+### Login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@admin.com",
+  "password": "123456"
+}
+
+### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+### Busca todas as categorias
+GET http://localhost:3000/financial-categories
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiaWF0IjoxNzQ3MTUxMDUzLCJleHAiOjE3NDcxNTQ2NTN9.sd-02v8jlHywEhWPgy5IdFtCmv4WDnSeQEQBSvo1MjU
+
+### Busca todas as entradas
+GET http://localhost:3000/financial-entries
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiaWF0IjoxNzQ3Mzk0ODgxLCJleHAiOjE3NDczOTg0ODF9.tIQCDFcUwVb4b6PaS4Gdl0HXA4MxbtxCDs738j92WmQ
+
+### Busca todas as entradas
+GET http://localhost:3000/financial-entries/resume/2025-05-15/2025-05-16
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiaWF0IjoxNzQ3Mzk1MzA1LCJleHAiOjE3NDczOTg5MDV9.C4MFaAs3YHGaSr4d1fWJrq53DhWQnCzGlzdVGBQ8lbE
+
+### Busca todos os usuários
+GET http://localhost:3000/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiaWF0IjoxNzQ3Mzk1MzA1LCJleHAiOjE3NDczOTg5MDV9.C4MFaAs3YHGaSr4d1fWJrq53DhWQnCzGlzdVGBQ8lbE
+### - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+
+
+### Busca uma categoria pelo id
+POST http://localhost:3000/financial-categories/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiaWF0IjoxNzQ3MTUxMDUzLCJleHAiOjE3NDcxNTQ2NTN9.sd-02v8jlHywEhWPgy5IdFtCmv4WDnSeQEQBSvo1MjU
+
+{
+  "name": "Teste de categoria",
+  "description": "Teste de descrição"
+}
+
+### 
+GET http://localhost:3000/financial-categories/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiaWF0IjoxNzQ3MTUxMDUzLCJleHAiOjE3NDcxNTQ2NTN9.sd-02v8jlHywEhWPgy5IdFtCmv4WDnSeQEQBSvo1MjU
+
+### 
+GET http://localhost:3000/financial-entries
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiaWF0IjoxNzQ3MzY2MDEwLCJleHAiOjE3NDczNjk2MTB9.KZszf9ViddPxCPqGeTABhyGIBUpDJQmXxnbK2IcXmFg
+
+### Cria uma entrada
+POST http://localhost:3000/financial-entries
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiYWRtaW5AYWRtaW4uY29tIiwiaWF0IjoxNzQ3MTUwOTQwLCJleHAiOjE3NDcxNTQ1NDB9.yvKDj_8OEJL16Th7PUFewIcEt-LbwTrtfpiVJwhjmCU
+
+{
+  "title": "Teste de entrada",
+  "description": "Teste de descrição",
+  "value": 100,
+  "type": "income",
+  "category_id": 1
+}
+
+### Busca um usuário pelo id
+GET http://localhost:3000/users/7
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjcsImVtYWlsIjoidGVzdGVAZ21haWwuY29tIiwiaWF0IjoxNzQ2ODEwODEyLCJleHAiOjE3NDY4MTQ0MTJ9.oRSWCzFV9YDapkNtbTAlJDAmBv-ELXqUOjTFp3m0jMQ
+
+### Cria um usuário
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Jorge Souza",
+  "email": "teste@gmail.com",
+  "password": "123456"
+}
+
+### Atualiza um usuário
+PATCH http://localhost:3000/users/5
+Content-Type: application/json
+
+{
+  "name": "Jorge Souza 2",
+  "email": "jorge.junior.gm@gmail.com",
+  "password": "123456"
+}
+
+
+### Deleta um usuário
+DELETE http://localhost:3000/users/2
