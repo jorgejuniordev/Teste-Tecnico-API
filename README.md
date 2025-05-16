@@ -1,4 +1,4 @@
-# Gerenciador de Finanças Pessoais
+# Gerenciador Financeiro
 
 ## Requisitos
 
